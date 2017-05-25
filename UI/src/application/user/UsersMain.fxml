@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="605.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.user.UserController">
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="72.0" prefWidth="157.0" text="User Menu" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="37.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <TabPane prefHeight="690.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Camera 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="690.0" prefWidth="850.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" layoutX="-1.0" layoutY="-3.0" prefHeight="49.0" prefWidth="850.0">
+                           <children>
+                              <TextField alignment="CENTER" editable="false" prefHeight="33.0" prefWidth="140.0" text="상상랩7번방">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin></TextField>
+                              <Label prefHeight="28.0" prefWidth="70.0" text="의 정보">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="200.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="HYShortSamul-Medium" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="165.0" text="Last Time of Update">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Agency FB" size="24.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="updateTime" alignment="CENTER" prefHeight="29.0" prefWidth="50.0">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="17.0" text="시">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="HYShortSamul-Medium" size="24.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="updateMin" alignment="CENTER" prefHeight="29.0" prefWidth="50.0">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label alignment="CENTER" text="분">
+                                 <font>
+                                    <Font name="HYShortSamul-Medium" size="24.0" />
+                                 </font></Label>
+                              <TextField fx:id="updateSec" alignment="CENTER" prefHeight="29.0" prefWidth="50.0">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label alignment="CENTER" text="초">
+                                 <font>
+                                    <Font name="HYShortSamul-Medium" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets right="30.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="-1.0" layoutY="436.0" prefHeight="58.0" prefWidth="850.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#update" prefHeight="38.0" prefWidth="100.0" text="Update">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <Glow level="0.28" />
+                                 </effect>
+                                 <font>
+                                    <Font name="Agency FB" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <SplitPane dividerPositions="0.5235849056603774" layoutX="-5.0" layoutY="41.0" prefHeight="398.0" prefWidth="850.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="425.0" prefHeight="690.0" prefWidth="850.0">
+                                 <children>
+                                    <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#a6501b87" height="222.0" layoutX="160.0" layoutY="100.0" stroke="BLACK" strokeType="OUTSIDE" width="133.0" />
+                                    <Rectangle fx:id="ssRec6" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="202.0" layoutY="28.0" onMouseClicked="#showssinfo6" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Rectangle fx:id="ssRec5" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="94.0" layoutY="119.0" onMouseClicked="#showssinfo5" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Rectangle fx:id="ssRec4" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="308.0" layoutY="119.0" onMouseClicked="#showssinfo4" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Rectangle fx:id="ssRec3" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="94.0" layoutY="186.0" onMouseClicked="#showssinfo3" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Rectangle fx:id="Rec7" arcHeight="20.0" arcWidth="20.0" height="50.0" layoutX="308.0" layoutY="186.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Rectangle fx:id="ssRec1" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="94.0" layoutY="246.0" onMouseClicked="#showssinfo1" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <Rectangle fx:id="ssRec2" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="308.0" layoutY="246.0" onMouseClicked="#showssinfo2" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                                    <TextField fx:id="TF4" alignment="CENTER" editable="false" layoutX="358.0" layoutY="127.0" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="TF6" alignment="CENTER" editable="false" layoutX="252.0" layoutY="36.0" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="TF2" alignment="CENTER" editable="false" layoutX="358.0" layoutY="254.0" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="TF5" editable="false" layoutX="5.0" layoutY="127.0" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="TF3" editable="false" layoutX="5.0" layoutY="194.0" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: transparent;" />
+                                    <TextField fx:id="TF1" editable="false" layoutX="5.0" layoutY="254.0" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: transparent;" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="400.0" prefHeight="690.0" prefWidth="850.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" layoutX="4.0" layoutY="72.0" prefHeight="73.0" prefWidth="397.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="71.0" prefWidth="137.0" text="현재 공간의 점유율">
+                                             <font>
+                                                <Font name="HYShortSamul-Medium" size="24.0" />
+                                             </font></Label>
+                                          <TextField fx:id="Div1" alignment="CENTER" editable="false" prefHeight="48.0" prefWidth="118.0">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets right="20.0" />
+                                             </HBox.margin>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <effect>
+                                                <SepiaTone />
+                                             </effect></TextField>
+                                          <TextField fx:id="Result1" alignment="CENTER" editable="false" prefHeight="48.0" prefWidth="118.0">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                             <effect>
+                                                <SepiaTone />
+                                             </effect>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <TextField fx:id="savedTime1" layoutX="57.0" layoutY="170.0" prefHeight="56.0" prefWidth="286.0">
+                                       <effect>
+                                          <SepiaTone />
+                                       </effect>
+                                       <font>
+                                          <Font name="HYShortSamul-Medium" size="24.0" />
+                                       </font></TextField>
+                                    <Button layoutX="153.0" layoutY="254.0" mnemonicParsing="false" onAction="#getDetailss" prefHeight="38.0" prefWidth="100.0" text="Detail">
+                                       <font>
+                                          <Font name="Agency FB" size="24.0" />
+                                       </font>
+                                    </Button>
+                                 </children></AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Camera 2">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="690.0" prefWidth="850.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" layoutX="-1.0" layoutY="-3.0" prefHeight="49.0" prefWidth="850.0">
+                           <children>
+                              <TextField alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="140.0" text="4열람실">
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label prefHeight="28.0" prefWidth="55.0" text="의 정보">
+                                 <font>
+                                    <Font name="HYShortSamul-Medium" size="24.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="200.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label prefHeight="29.0" prefWidth="155.0" text="Last Time of Update">
+                                 <font>
+                                    <Font name="Agency FB" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="updateTime1" alignment="CENTER" prefHeight="29.0" prefWidth="42.0">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="17.0" text="시">
+                                 <font>
+                                    <Font name="HYShortSamul-Medium" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="updateMin1" alignment="CENTER" prefHeight="29.0" prefWidth="42.0">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label alignment="CENTER" text="분">
+                                 <font>
+                                    <Font name="HYShortSamul-Medium" size="24.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="updateSec1" alignment="CENTER" prefHeight="29.0" prefWidth="42.0">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label alignment="CENTER" text="초">
+                                 <font>
+                                    <Font name="HYShortSamul-Medium" size="24.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets right="30.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="-1.0" layoutY="436.0" prefHeight="58.0" prefWidth="850.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#update" prefHeight="38.0" prefWidth="100.0" text="Update">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <effect>
+                                    <Glow level="0.28" />
+                                 </effect>
+                                 <font>
+                                    <Font name="Agency FB" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <SplitPane dividerPositions="0.5" layoutX="-5.0" layoutY="41.0" prefHeight="398.0" prefWidth="850.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="425.0" prefHeight="690.0" prefWidth="850.0">
+                                 <children>
+                                    <GridPane alignment="CENTER" layoutX="3.0" layoutY="11.0" prefHeight="396.0" prefWidth="425.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints maxWidth="200.0" prefWidth="180.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="117.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="214.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="190.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Rectangle fx:id="osRec7" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo7" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Rectangle fx:id="osRec6" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo6" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <Rectangle fx:id="osRec5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo5" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <Rectangle fx:id="osRec4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo4" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <Rectangle fx:id="osRec3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo3" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <Rectangle fx:id="osRec2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo2" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <Rectangle fx:id="osRec1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo1" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                          <Rectangle fx:id="osRec8" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo8" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" />
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a14b1d88" height="451.0" stroke="BLACK" strokeType="INSIDE" width="140.0" GridPane.rowIndex="4" />
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin></Rectangle>
+                                          <Rectangle fx:id="osRec9" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo9" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin></Rectangle>
+                                          <Rectangle fx:id="osRec10" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo10" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin></Rectangle>
+                                          <Rectangle fx:id="osRec11" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo11" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin></Rectangle>
+                                          <Rectangle fx:id="osRec12" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo12" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin></Rectangle>
+                                          <Rectangle fx:id="osRec13" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="55.0" onMouseClicked="#showosinfo13" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin></Rectangle>
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin></Rectangle>
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                             <GridPane.margin>
+                                                <Insets left="20.0" />
+                                             </GridPane.margin></Rectangle>
+                                          <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a14b1d88" height="451.0" stroke="BLACK" strokeType="INSIDE" width="160.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                          </Rectangle>
+                                          <TextField fx:id="tf9" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                          <TextField fx:id="tf8" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" />
+                                          <TextField fx:id="tf7" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.rowIndex="1" />
+                                          <TextField fx:id="tf6" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.rowIndex="2" />
+                                          <TextField fx:id="tf5" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.rowIndex="3" />
+                                          <TextField fx:id="tf4" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.rowIndex="4" />
+                                          <TextField fx:id="tf3" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.rowIndex="5" />
+                                          <TextField fx:id="tf2" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.rowIndex="6" />
+                                          <TextField fx:id="tf1" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.rowIndex="7" />
+                                          <TextField fx:id="tf10" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                          <TextField fx:id="tf11" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                          <TextField fx:id="tf12" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                          <TextField fx:id="tf13" alignment="CENTER" editable="false" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: a0491e00;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="425.0" prefHeight="690.0" prefWidth="850.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" layoutX="4.0" layoutY="72.0" prefHeight="73.0" prefWidth="417.0">
+                                       <children>
+                                          <Label alignment="CENTER" prefHeight="71.0" prefWidth="151.0" text="현재 공간의 점유율">
+                                             <font>
+                                                <Font name="HYShortSamul-Medium" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="Div2" alignment="CENTER" editable="false" prefHeight="48.0" prefWidth="118.0">
+                                             <effect>
+                                                <SepiaTone />
+                                             </effect>
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                             <opaqueInsets>
+                                                <Insets />
+                                             </opaqueInsets>
+                                             <HBox.margin>
+                                                <Insets right="20.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                          <TextField fx:id="Result2" alignment="CENTER" editable="false" prefHeight="48.0" prefWidth="118.0">
+                                             <effect>
+                                                <SepiaTone />
+                                             </effect>
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <TextField fx:id="savedTime2" layoutX="70.0" layoutY="170.0" prefHeight="56.0" prefWidth="286.0">
+                                       <effect>
+                                          <SepiaTone />
+                                       </effect>
+                                       <font>
+                                          <Font name="HYShortSamul-Medium" size="24.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button layoutX="163.0" layoutY="255.0" mnemonicParsing="false" onAction="#getDetailos" prefHeight="38.0" prefWidth="100.0" text="Detail">
+                                       <font>
+                                          <Font name="Agency FB" size="24.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <effect>
+      <InnerShadow />
+   </effect>
+</BorderPane>

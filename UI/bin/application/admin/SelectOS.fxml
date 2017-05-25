@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.SelectedController">
+   <center>
+      <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="450.0">
+               <children>
+                  <GridPane alignment="CENTER" layoutX="-2.0" layoutY="8.0" prefHeight="500.0" prefWidth="450.0">
+                     <children>
+                        <Rectangle fx:id="osRec7" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Rectangle fx:id="osRec6" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Rectangle fx:id="osRec5" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Rectangle fx:id="osRec4" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Rectangle fx:id="osRec3" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Rectangle fx:id="osRec2" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Rectangle fx:id="osRec1" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Rectangle fx:id="osRec8" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a14b1d88" height="568.0" stroke="BLACK" strokeType="INSIDE" width="145.0" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="20.0" arcWidth="20.0" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" />
+                        <Rectangle fx:id="osRec9" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Rectangle fx:id="osRec10" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Rectangle fx:id="osRec11" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Rectangle fx:id="osRec12" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Rectangle fx:id="osRec13" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="20.0" arcWidth="20.0" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="20.0" arcWidth="20.0" height="55.0" stroke="BLACK" strokeType="INSIDE" width="55.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a14b1d88" height="571.0" stroke="BLACK" strokeType="INSIDE" width="146.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="55.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="117.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="214.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <StackedBarChart fx:id="stack2" animated="false" layoutX="3.0" layoutY="515.0" legendVisible="false" prefHeight="377.0" prefWidth="439.0">
+                     <xAxis>
+                        <CategoryAxis animated="false" prefHeight="46.0" prefWidth="375.0" side="BOTTOM" tickLabelGap="10.0" tickLength="15.0">
+                           <tickLabelFont>
+                              <Font size="10.0" />
+                           </tickLabelFont>
+                        </CategoryAxis>
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis animated="false" autoRanging="false" label="점유율" side="LEFT" tickUnit="10.0" />
+                     </yAxis>
+                  </StackedBarChart>
+                  <LineChart fx:id="line2" animated="false" layoutX="3.0" layoutY="515.0" legendVisible="false" opacity="0.5" prefHeight="377.0" prefWidth="439.0">
+                     <xAxis>
+                        <CategoryAxis animated="false" prefHeight="46.0" prefWidth="375.0" side="BOTTOM" tickLabelGap="10.0" tickLength="15.0">
+                           <tickLabelFont>
+                              <Font size="10.0" />
+                           </tickLabelFont>
+                        </CategoryAxis>
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis animated="false" autoRanging="false" label="점유율" side="LEFT" tickUnit="10.0" />
+                     </yAxis>
+                  </LineChart>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="450.0">
+               <children>
+                  <Button layoutX="180.0" layoutY="666.0" mnemonicParsing="false" onAction="#SelectRefreshOS" text="Update">
+                     <font>
+                        <Font name="Agency FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <HBox alignment="CENTER" layoutX="3.0" layoutY="7.0" prefHeight="100.0" prefWidth="442.0">
+                     <children>
+                        <TextField fx:id="Time2" prefHeight="50.0" prefWidth="50.0">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label text="시">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Min2" prefHeight="50.0" prefWidth="50.0">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="18.0" />
+                           </font></TextField>
+                        <Label text="분">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Sec2" prefHeight="50.0" prefWidth="50.0">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label prefHeight="28.0" prefWidth="149.0" text="초의 공간 점유 상황">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <ImageView fx:id="imageview2" fitHeight="325.0" fitWidth="450.0" layoutX="-2.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true" />
+                  <HBox alignment="CENTER" layoutX="6.0" layoutY="207.0" prefHeight="100.0" prefWidth="442.0">
+                     <children>
+                        <Label text="해당 시간의 출입자">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="count" prefHeight="50.0" prefWidth="50.0">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label prefHeight="28.0" prefWidth="26.0" text="명">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="2.0" layoutY="107.0" prefHeight="100.0" prefWidth="442.0">
+                     <children>
+                        <Label text="해당 시간의 점유율">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="Occupation" prefHeight="50.0" prefWidth="65.0">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Label prefHeight="28.0" prefWidth="26.0" text="\%">
+                           <font>
+                              <Font name="HYShortSamul-Medium" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>

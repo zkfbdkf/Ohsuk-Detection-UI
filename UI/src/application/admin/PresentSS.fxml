@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.PresentContoller">
+   <center>
+      <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="450.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#a64f1ca2" height="251.0" layoutX="129.0" layoutY="194.0" stroke="BLACK" strokeType="OUTSIDE" width="176.0" />
+                  <Rectangle fx:id="ssRec6" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="191.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <Rectangle fx:id="ssRec5" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="64.0" layoutY="228.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <Rectangle fx:id="ssRec3" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="64.0" layoutY="295.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <Rectangle fx:id="ssRec1" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="64.0" layoutY="368.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <Rectangle fx:id="ssRec4" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="321.0" layoutY="228.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <Rectangle fx:id="Rec7" arcHeight="20.0" arcWidth="20.0" height="50.0" layoutX="321.0" layoutY="295.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+                  <Rectangle fx:id="ssRec2" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="50.0" layoutX="321.0" layoutY="368.0" stroke="BLACK" strokeType="INSIDE" width="52.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="450.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Button layoutX="180.0" layoutY="493.0" mnemonicParsing="false" onAction="#PresentRefreshSS" prefHeight="45.0" prefWidth="91.0" text="Update">
+                     <font>
+                        <Font name="Agency FB" size="24.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="imageview1" fitHeight="350.0" fitWidth="450.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true" />
+                  <HBox alignment="CENTER" layoutX="25.0" layoutY="60.0" prefHeight="57.0" prefWidth="400.0">
+                     <children>
+                        <Label text="Last Update Time">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Agency FB" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="UPtime1" editable="false" prefHeight="29.0" prefWidth="42.0">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="시">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="UPmin1" editable="false" prefHeight="29.0" prefWidth="42.0">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="분">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin></Label>
+                        <TextField fx:id="UPsec1" editable="false" prefHeight="29.0" prefWidth="42.0">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="초" />
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </center>
+</BorderPane>
